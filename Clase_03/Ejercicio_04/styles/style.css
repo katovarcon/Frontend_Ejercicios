@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    padding: 40px;
+}
+
+.paisaje {
+    margin-top: 20px;
+}
+
+.size1 {
+    font-size: 20px;
+}
+
+.size2 {
+    font-size: 30px;
+}
+
+.size3 {
+    font-size: 40px;
+}
+
+.size4 {
+    font-size: 50px;
+}
+
+.size5 {
+    font-size: 60px;
+}

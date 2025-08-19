@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    font-family: 'Verdana', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+li {
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    width: 180px;
+    text-align: center;
+}
+
+.claro {
+    color: black;
+}
+
+.oscuro {
+    color: white;
+}

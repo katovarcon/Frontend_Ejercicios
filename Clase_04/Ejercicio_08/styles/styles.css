@@ -1,0 +1,28 @@
+ul {
+    list-style: none;
+    padding: 0;
+    width: 150px;
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+  
+  
+  li {
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+  }
+  
+  
+  
+  .t0  { background: #0033cc; }   
+  .t5  { background: #3399ff; }   
+  .t10 { background: #99ccff; }   
+  .t15 { background: #ccddff; }   
+  .t20 { background: #ffffcc; }   
+  .t25 { background: #ffff66; }   
+  .t30 { background: #ffcc33; }   
+  .t35 { background: #ff9933; }   
+  .t40 { background: #ff6600; }   
+  .t45 { background: #cc3300; }   
+  .t50 { background: #990000; }

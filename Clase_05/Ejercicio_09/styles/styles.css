@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #34495e;
+}
+
+.movimiento {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.movimiento h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.fecha {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.monto {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.positivo {
+    color: green;
+}
+
+.negativo {
+    color: red;
+}

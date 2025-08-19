@@ -1,0 +1,14 @@
+.izquierda {
+    text-align: left;
+    color: blue;
+  }
+  
+  .centro {
+    text-align: center;
+    color: red;
+  }
+  
+  .derecha {
+    text-align: right;
+    color: green;
+  }

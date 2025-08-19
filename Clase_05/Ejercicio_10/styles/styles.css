@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #222;
+}
+
+h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.estado {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-left: 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pendiente {
+    background-color: #007BFF; 
+}
+
+.haciendo {
+    background-color: #FF6600; 
+}
+
+.hecha {
+    background-color: #28A745; 
+}
+
+.cancelada {
+    background-color: #DC3545; 
+}
