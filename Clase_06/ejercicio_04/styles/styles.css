@@ -1,0 +1,21 @@
+body {
+    background-color: #f0f0f0;
+    padding: 30px;
+    font-family: sans-serif;
+  }
+  
+  .barra {
+    width: 500px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 100px;
+    padding: 3px;
+    margin: 15px auto;
+  }
+  
+  .progreso {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 100px;
+  }
+  
