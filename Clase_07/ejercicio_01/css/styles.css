@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #9900cc;
+}
+
+.layouts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a.layout-link {
+  background: white;
+  border: 2px solid #d98fff;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+a.layout-link:hover {
+  background: #f9e6ff;
+  color: #9900cc;
+  border-color: #9900cc;
+}

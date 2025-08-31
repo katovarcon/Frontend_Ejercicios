@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.die {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+/** DADO 1 **/
+
+.die-1 {
+  justify-content: center;
+  align-items: center;
+}
+
+/** DADO 2**/
+
+.die-2 .row:nth-child(1) {
+  justify-content: flex-start;
+}
+
+.die-2 .row:nth-child(2) {
+  justify-content: flex-end;
+}
+
+/** DADO 3 **/
+
+.die-3 .row:nth-child(1) {
+  justify-content: flex-end;
+}
+
+.die-3 .row:nth-child(2) {
+  justify-content: center;
+}
+
+/** DADO 4 **/
+
+.die-4 .row {
+  justify-content: space-between;
+}
+
+/** DADO 5 **/
+
+.die-5 .row:nth-child(1),
+.die-5 .row:nth-child(3) {
+  justify-content: space-between;
+}
+
+.die-5 .row:nth-child(2) {
+  justify-content: center;
+}
+
+/** DADO 6 **/
+
+.die-6 .row {
+  justify-content: space-between;
+}
