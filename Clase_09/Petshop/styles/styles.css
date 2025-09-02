@@ -1,0 +1,317 @@
+/* -----------------------------
+   RESET BÁSICO Y TOKENS
+----------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary: #ff914d;
+    --bg-dark: #111;
+    --bg-light: #f9f9f9;
+    --text-light: #fff;
+    --text-dark: #222;
+    --accent: #ffcf77;
+    --max-width: 1200px;
+    --font-main: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    padding-bottom: 4rem;
+  }
+  
+  /* -----------------------------
+     HEADER
+  ----------------------------- */
+  header.header-top {
+    background-color: #222;
+    padding: 1rem;
+    color: var(--text-light);
+  }
+  
+  .promo {
+    background-color: var(--primary);
+    color: #000;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .idioma-moneda {
+    text-align: right;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  
+  .nav-principal ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .nav-principal a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-principal a:hover {
+    color: var(--primary);
+  }
+  
+  /* -----------------------------
+     HERO SECTION
+  ----------------------------- */
+  .hero {
+    background-image: linear-gradient(to right, #ff914d, #ffbc70);
+    color: var(--text-dark);
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-hero {
+    background-color: #fff;
+    color: var(--primary);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 2px solid var(--primary);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-hero:hover {
+    background-color: var(--primary);
+    color: #fff;
+  }
+  
+  /* -----------------------------
+     PRODUCTOS
+  ----------------------------- */
+  .productos {
+    padding: 3rem 1rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .productos h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filtros {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .filtros button {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filtros button:hover {
+    background-color: var(--primary);
+    color: #fff;
+  }
+  
+  .producto-lista {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .producto {
+    background-color: #222;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .producto:hover {
+    transform: scale(1.05);
+  }
+  
+  /* -----------------------------
+     FORMULARIO DE CONTACTO
+  ----------------------------- */
+  .contacto {
+    padding: 3rem 1rem;
+    background-color: #1a1a1a;
+    text-align: center;
+  }
+  
+  .contacto h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form input {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .form-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .btn-reset {
+    background-color: #777;
+    color: #fff;
+  }
+  
+  .btn-enviar {
+    background-color: var(--primary);
+    color: #000;
+  }
+  
+  /* -----------------------------
+     NEWSLETTER
+  ----------------------------- */
+  .newsletter {
+    background-color: #2a2a2a;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .suscripcion input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.5rem 0;
+  }
+  
+  .suscripcion button {
+    background-color: var(--accent);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .info p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+  }
+  
+  /* -----------------------------
+     FOOTER
+  ----------------------------- */
+  footer.footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* -----------------------------
+     RESPONSIVE
+  ----------------------------- */
+  @media (max-width: 768px) {
+    .header-main {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+  
+    .nav-principal ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .producto-lista {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .newsletter {
+      padding: 1rem;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  }
+  

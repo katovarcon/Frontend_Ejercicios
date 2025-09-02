@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petshop | Front Cat&Dog</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header-top">
+    <div class="promo" role="banner">🎉 Grandes ofertas en comederos</div>
+    <div class="idioma-moneda" aria-label="Idioma y moneda">
+      <span lang="es">Español</span> | <span>ARG$</span>
+    </div>
+
+    <div class="header-main">
+      <img src="./images/LogoCabecera.png" alt="Logo Front Cat and Dog" class="logo">
+      <nav class="nav-principal">
+        <ul class="nav-lista">
+          <li><a href="#productos">Categorías</a></li>
+          <li><a href="#pets">Pets</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <h2>¡Es un placer tenerte aquí!</h2>
+        <p>¡Comederos en descuento!</p>
+        <a href="#productos" class="btn-hero">Ver Comederos</a>
+      </div>
+    </section>
+
+    <section class="productos" id="productos">
+      <h3>Productos Destacados</h3>
+
+      <div class="filtros">
+        <button type="button">Comederos</button>
+        <button type="button">Accesorios</button>
+        <button type="button">Comida</button>
+      </div>
+
+      <div class="producto-lista">
+        <article class="producto">
+          <img src="./images/churrasquito.png" alt="Juguete Churrasquito para perro">
+          <p>Juguete Churrasquito</p>
+          <strong>$150</strong>
+        </article>
+
+        <article class="producto">
+          <img src="./images/comedero.png" alt="Comedero para perro metálico">
+          <p>Comedero para perro</p>
+          <strong>$250</strong>
+        </article>
+
+        <article class="producto">
+          <img src="./images/Huesito.png" alt="Juguete Huesito de goma">
+          <p>Juguete Huesito</p>
+          <strong>$650</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h3>Contáctanos</h3>
+      <form class="form-contacto" action="#" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+        <input type="email" name="correo" placeholder="Ingresa tu correo electrónico" required>
+        <input type="tel" name="telefono" placeholder="Teléfono (opcional)">
+
+        <div class="form-btns">
+          <button type="reset" class="btn-reset">Resetear</button>
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="suscripcion">
+        <label for="email-newsletter">📧 Suscríbete para más novedades</label>
+        <input type="email" id="email-newsletter" placeholder="Ingresa tu correo electrónico" required>
+        <button type="button">Suscribirme</button>
+      </div>
+
+      <address class="info">
+        <p>📍 Localidad: Calle Ficticia 123 - Buenos Aires</p>
+        <p>📞 Teléfono: (011) 1234-5678</p>
+        <p>✉️ Correo: contacto@frontcatdog.com</p>
+      </address>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>🐶🐱 Front Cat&Dog 🐱🐶</p>
+    <small>Todos los derechos reservados &copy; 2025 Front End</small>
+  </footer>
+
+</body>
+</html>
