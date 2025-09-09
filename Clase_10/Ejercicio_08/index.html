@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservación</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+  <section class="reservation-section" aria-label="Formulario de reservación">
+    <div class="overlay"></div>
+
+    <div class="content-wrapper">
+
+      <div class="reservation-text">
+        <h1>Haz tu reserva</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere,
+          soluta magnam consectetur molestias itaque ad sint fugit architecto
+          incidunt iste culpa perspiciatis possimus voluptates aliquid consequuntur
+          cumque quasi.
+        </p>
+      </div>
+
+      <form class="reservation-form" action="#" method="POST" novalidate>
+        <div class="form-group">
+          <label for="destination">Destino o nombre del hotel</label>
+          <input
+            type="text"
+            id="destination"
+            name="destination"
+            placeholder="Ingrese un destino o nombre del hotel"
+            required
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="small-inputs">
+          <div class="form-group">
+            <label for="checkin">Fecha de entrada</label>
+            <input type="date" id="checkin" name="checkin" required />
+          </div>
+
+          <div class="form-group">
+            <label for="checkout">Fecha de salida</label>
+            <input type="date" id="checkout" name="checkout" required />
+          </div>
+        </div>
+
+        <div class="small-inputs">
+          <div class="form-group">
+            <label for="rooms">Habitaciones</label>
+            <input type="number" id="rooms" name="rooms" min="1" value="1" required />
+          </div>
+
+          <div class="form-group">
+            <label for="adults">Adultos</label>
+            <input type="number" id="adults" name="adults" min="1" value="1" required />
+          </div>
+
+          <div class="form-group">
+            <label for="children">Niños</label>
+            <input type="number" id="children" name="children" min="0" value="0" />
+          </div>
+        </div>
+
+        <button type="submit">Verificar disponibilidad</button>
+      </form>
+
+    </div>
+  </section>
+</body>
+</html>

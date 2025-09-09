@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foro</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+  <div class="topic-form">
+    <h2>Crear un nuevo tema</h2>
+
+    <form action="#" method="post">
+
+      <div class="form-grupo">
+        <label for="titulo">Título o enlace</label>
+        <input 
+          type="text" 
+          id="titulo" 
+          name="titulo" 
+          placeholder="Escribe un título o pega un enlace aquí" 
+          required>
+      </div>
+
+      <div class="select-group">
+        <div class="form-grupo">
+          <label for="categoria">Categoría</label>
+          <select id="categoria" name="categoria" required>
+            <option value="" disabled selected>Selecciona una categoría</option>
+            <option value="design">Diseño</option>
+            <option value="development">Desarrollo</option>
+          </select>
+        </div>
+
+        <div class="form-grupo">
+          <label for="tags">Etiqueta</label>
+          <select id="tags" name="tags">
+            <option value="" disabled selected>Selecciona una etiqueta</option>
+            <option value="ui">#UI</option>
+            <option value="ux">#UX</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-grupo">
+        <label for="descripcion">Descripción</label>
+        <textarea 
+          id="descripcion" 
+          name="descripcion" 
+          rows="5" 
+          placeholder="Escribe la descripción del tema aquí..." 
+          required></textarea>
+      </div>
+
+      <div class="button-group">
+        <button type="submit" class="btn-create">+ Crear tema</button>
+        <button type="button" class="btn-cancel">Cancelar</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>

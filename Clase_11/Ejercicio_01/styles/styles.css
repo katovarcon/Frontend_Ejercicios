@@ -1,0 +1,206 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 1rem;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  .hero {
+    background: #004d99;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .title {
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  
+  .nav a {
+    color: #a8d0ff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover,
+  .nav a:focus {
+    color: #fff;
+    outline: none;
+    text-decoration: underline;
+  }
+  
+  .section {
+    background: white;
+    margin: 2rem auto;
+    max-width: 700px;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .section h2 {
+    margin-top: 0;
+    color: #004d99;
+    border-bottom: 2px solid #004d99;
+    padding-bottom: 0.3rem;
+  }
+  
+  .todos {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .todos li {
+    background: #e6f0ff;
+    margin: 0.3rem 0;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    position: relative;
+    font-weight: 500;
+  }
+  
+  .todos li:nth-child(odd) {
+    background: #cce0ff;
+  }
+  
+  .todos li::before {
+    content: "✔";
+    color: #0073e6;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 1rem;
+  }
+  
+  .card {
+    background: #f0f5ff;
+    border: 2px solid #004d99;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 15px rgba(0,77,153,0.4);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #003366;
+  }
+  
+  .btn {
+    background: #ddd;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #bbb;
+  }
+  
+  .btn:active {
+    background-color: #999;
+    transform: translateY(2px);
+  }
+  
+  .btn.primary {
+    background-color: #004d99;
+    color: white;
+  }
+  
+  .btn.primary:hover {
+    background-color: #003366;
+  }
+  
+  .actions .btn:not(.primary) {
+    background-color: #eee;
+    color: #333;
+  }
+  
+  #compacto:checked ~ .grid .card {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #004d99;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.3rem;
+    transition: border-color 0.3s;
+  }
+  
+  .form input:focus {
+    border-color: #004d99;
+    outline: none;
+    box-shadow: 0 0 6px #a8cfff;
+  }
+  
+  .form input:valid {
+    border-color: #28a745;
+  }
+  
+  .form input:invalid {
+    border-color: #dc3545;
+  }
+  
+  .form input:placeholder-shown {
+    font-style: italic;
+    color: #999;
+  }
+  
+  .form .btn {
+    margin-top: 1rem;
+  }
+  
+  .form .btn + .btn {
+    margin-left: 0.5rem;
+  }
+  
+  .footer {
+    text-align: center;
+    margin: 3rem 0 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .back {
+    color: #004d99;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .back:hover,
+  .back:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+  

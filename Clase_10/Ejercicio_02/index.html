@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carga de productos</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <main>
+    <h1>Cargar nuevo producto</h1>
+
+    <form action="/cargar-producto" method="post" class="formulario-producto">
+      
+      <div class="form-grupo">
+        <label for="titulo">Título del producto:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Ej. Bicicleta MTB 29''" required>
+      </div>
+
+      <div class="form-grupo">
+        <label for="marca">Marca:</label>
+        <select id="marca" name="marca" required>
+          <option value="" disabled selected>Seleccionar una marca</option>
+          <option value="Klatter">Klatter</option>
+          <option value="Top Mega">Top Mega</option>
+          <option value="Fierce">Fierce</option>
+          <option value="Shimano">Shimano</option>
+          <option value="Lamborghini">Lamborghini</option>
+          <option value="Aurora">Aurora</option>
+          <option value="GT">GT</option>
+        </select>
+      </div>
+
+      <div class="form-grupo">
+        <label for="rodado">Rodado:</label>
+        <input type="number" id="rodado" name="rodado" min="12" max="29" step="1" placeholder="Ej. 29" required>
+      </div>
+
+      <fieldset class="form-grupo">
+        <legend>Categoría de producto:</legend>
+
+        <input type="radio" id="mountain" name="categoria" value="Mountain Bike" required>
+        <label for="mountain">Mountain Bike</label><br>
+
+        <input type="radio" id="paseo" name="categoria" value="Paseo">

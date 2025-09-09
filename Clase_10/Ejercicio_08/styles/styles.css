@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #f2f7fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .reservation-section {
+    position: relative;
+    background: #fff;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80') no-repeat center center/cover;
+    filter: brightness(0.7);
+    z-index: 1;
+  }
+  
+  .content-wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    width: 100%;
+  }
+  
+  .reservation-text {
+    flex: 1 1 350px;
+    color: #fff;
+    padding-right: 30px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  }
+  
+  .reservation-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .reservation-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .reservation-form {
+    flex: 1 1 350px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px 12px;
+    border: 1.8px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #0077ff;
+    box-shadow: 0 0 6px rgba(0,119,255,0.3);
+  }
+  
+  .small-inputs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .small-inputs > div {
+    flex: 1 1 120px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #0077ff;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #005bb5;
+  }
+  
+  @media (max-width: 768px) {
+    .reservation-section {
+      flex-direction: column;
+    }
+    
+    .content-wrapper {
+      padding: 20px;
+    }
+    
+    .reservation-text, .reservation-form {
+      flex: 1 1 100%;
+      padding-right: 0;
+    }
+    
+    .small-inputs {
+      flex-direction: column;
+    }
+    
+    .small-inputs > div {
+      flex: 1 1 100%;
+    }
+  }
+  

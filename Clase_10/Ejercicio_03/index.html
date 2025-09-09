@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <main>
+    <div class="form-container">
+      <h2>Formulario de Pago</h2>
+      
+      <form action="/procesar-pago" method="post" class="formulario-pago">
+        
+        <div class="form-grupo">
+          <label for="card-number">Número de tarjeta de crédito</label>
+          <input 
+            type="text" 
+            id="card-number" 
+            name="card-number" 
+            inputmode="numeric" 
+            pattern="\d{13,19}" 
+            maxlength="19" 
+            placeholder="1234 5678 9012 3456" 
+            required>
+        </div>
+
+        <div class="form-grupo">
+          <label for="card-name">Nombre completo del titular</label>
+          <input 
+            type="text" 
+            id="card-name" 
+            name="card-name" 
+            placeholder="Nombre como figura en la tarjeta" 
+            required>
+        </div>
+
+        <div class="form-grupo">
+          <label for="exp-month">Mes de vencimiento</label>
+          <select id="exp-month" name="exp-month" required>
+            <option value="">Seleccionar mes</option>
+            <option value="01">01 - Enero</option>
+            <option valu

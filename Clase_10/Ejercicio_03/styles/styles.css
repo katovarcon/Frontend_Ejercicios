@@ -1,0 +1,86 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+  }
+  
+  .formulario-pago .form-grupo {
+    margin-bottom: 20px;
+  }
+  
+  .formulario-pago label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .formulario-pago input[type="text"],
+  .formulario-pago input[type="password"],
+  .formulario-pago input[type="number"],
+  .formulario-pago select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  .formulario-pago input:focus,
+  .formulario-pago select:focus {
+    border-color: #2980b9;
+    outline: none;
+  }
+  
+  .formulario-pago button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario-pago button[type="submit"]:hover {
+    background-color: #1e874b;
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 20px;
+    }
+  
+    .formulario-pago button[type="submit"] {
+      font-size: 16px;
+    }
+  }
+  

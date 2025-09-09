@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reservación II</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+  <div class="reservation-bar">
+    <div class="form-group">
+      <label for="destination">Destino</label>
+      <input type="text" id="destination" name="destination" placeholder="País, ciudad o código postal" />
+    </div>
+
+    <div class="form-group">
+      <label for="checkin">Check In</label>
+      <input type="date" id="checkin" name="checkin" />
+    </div>
+
+    <div class="form-group">
+      <label for="checkout">Check Out</label>
+      <input type="date" id="checkout" name="checkout" />
+    </div>
+
+    <div class="form-group">
+      <label for="guests">Huéspedes</label>
+      <input type="number" id="guests" name="guests" min="1" value="1" />
+    </div>
+
+    <button type="submit">Comprobar Disponibilidad</button>
+  </div>
+</body>
+</html>

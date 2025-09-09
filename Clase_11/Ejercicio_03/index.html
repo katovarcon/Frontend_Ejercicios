@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Práctica: Selectores Avanzados de Jerarquía</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <h1>Ejemplo de Jerarquías</h1>
+
+  <section>
+    <h2>Sección 1</h2>
+    <p>Este párrafo está justo después de un h2.</p>
+    <p>Este párrafo NO está justo después de un h2.</p>
+  </section>
+
+  <section>
+    <h2>Sección 2</h2>
+    <p>Párrafo hermano del h2 (1).</p>
+    <p>Párrafo hermano del h2 (2).</p>
+    <span>Otro elemento</span>
+  </section>
+
+  <section>
+    <h2>Sección 3: Descendientes</h2>
+    <div>
+      <p>Este párrafo está dentro de un div (descendiente).</p>
+      <section>
+        <p>Este párrafo también es descendiente, aunque más profundo.</p>
+      </section>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sección 4: Hijos Directos</h2>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <ol>
+        <li>Sub-elemento A (NO es hijo directo del primer ul)</li>
+      </ol>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Pie de página</p>
+  </footer>
+
+</body>
+</html>

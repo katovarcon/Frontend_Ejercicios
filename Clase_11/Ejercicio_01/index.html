@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Práctica: Pseudo-clases y Pseudo-elementos</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+
+  <header class="hero" id="top">
+    <h1 class="title">Selectores Avanzados</h1>
+    <nav class="nav" aria-label="Menú de navegación principal">
+      <a href="#lista">Lista</a>
+      <a href="#cards">Cards</a>
+      <a href="#form">Formulario</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="lista" class="section" tabindex="-1" aria-labelledby="lista-title">
+      <h2 id="lista-title">1) Lista de tareas</h2>
+      <ul class="todos" aria-describedby="lista-desc">
+        <li>Preparar HTML</li>
+        <li>Escribir CSS</li>
+        <li>Probar estados :hover / :active</li>
+        <li>Validar formulario</li>
+        <li>Usar :target con el menú</li>
+      </ul>
+      <p id="lista-desc">Consejo: usa <code>:nth-child()</code> y <code>:nth-of-type()</code>.</p>
+    </section>
+
+    <section id="cards" class="section" tabindex="-1" aria-labelledby="cards-title">
+      <h2 id="cards-title">2) Cards y Botones</h2>
+
+      <label class="toggle" for="compacto">
+        <input type="checkbox" id="compacto" />
+        <span>Modo compacto (usa <code>:checked</code>)</span>
+      </label>
+
+      <div class="grid" aria-live="polite">
+        <article class="card">
+          <h3>Card A</h3>
+          <p>Explora <code>:not()</code> para estilar los botones no primarios.</p>
+          <div class="actions">
+            <button class="btn primary">Primario</button>
+            <button class="btn">Secundario</button>
+            <button class="btn">Terciario</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Card B</h3>
+          <p>Pasa el mouse por los botones (:hover) y haz clic (:active).</p>
+          <div class="actions">
+            <button class="btn primary">Comprar</button>
+            <button class="btn">Info</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Card C</h3>
+          <p>El checkbox activa estilos globales para las cards.</p>
+          <div class="actions">
+            <button class="btn">Normal</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="form" class="section" tabindex="-1" aria-labelledby="form-title">
+      <h2 id="form-title">3) Formulario con validación</h2>
+      <form class="form" novalidate>
+        <label for="nombre">
+          Nombre
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+            minlength="3"
+            autocomplete="name"
+          />
+        </label>
+
+        <label for="email">
+          Email
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tucorreo@dominio.com"
+            required
+            autocomplete="email"
+          />
+        </label>
+
+        <label for="pass">
+          Contraseña
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            placeholder="Mín. 6 caracteres"
+            required
+            minlength="6"
+            autocomplete="new-password"
+          />
+        </label>
+
+        <button class="btn primary" type="submit">Enviar</button>
+        <button class="btn" type="reset">Cancelar</button>
+      </form>
+      <p>Prueba <code>:focus</code>, <code>:valid</code>, <code>:invalid</code> y <code>:placeholder-shown</code>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#top" class="back">Volver arriba</a>
+  </footer>
+
+</body>
+</html>
