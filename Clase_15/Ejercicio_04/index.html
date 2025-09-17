@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista de usuarios</title>
+</head>
+<body>
+  <aside class="user-list-widget" aria-label="Lista de usuarios">
+    <header class="user-list-widget__header">
+      <span class="user-list-widget__icon" aria-hidden="true">
+        <img src="https://cdn-icons-png.flaticon.com/512/7915/7915522.png" alt="" width="24" height="24" />
+      </span>
+      <h2 class="user-list-widget__title">Usuarios</h2>
+    </header>
+
+    <nav class="user-list-widget__navigation" aria-label="Navegación de usuarios">
+      <ul class="user-list" role="list">
+        <li class="user-list__item" role="listitem" tabindex="0">
+          <span class="user-avatar user-avatar--blue" aria-label="Avatar de Juan Turner">JT</span>
+          <span class="user-name">Juan Turner</span>
+        </li>
+        <li class="user-list__item user-list__item--selected" role="listitem" tabindex="0" aria-current="true">
+          <span class="user-avatar user-avatar--green" aria-label="Avatar de Edna Kelly">EK</span>
+          <span class="user-name">Edna Kelly</span>
+        </li>
+        <li class="user-list__item" role="listitem" tabindex="0">
+          <span class="user-avatar user-avatar--pink" aria-label="Avatar de Joshua Palmer">JP</span>
+          <span class="user-name">Joshua Palmer</span>
+        </li>
+        <li class="user-list__item" role="listitem" tabindex="0">
+          <span class="user-avatar user-avatar--red" aria-label="Avatar de Micheal Ferguson">MF</span>
+          <span class="user-name">Micheal Ferguson</span>
+        </li>
+        <li class="user-list__item" role="listitem" tabindex="0">
+          <span class="user-avatar user-avatar--light-green" aria-label="Avatar de Olive Fleming">OF</span>
+          <span class="user-name">Olive Fleming</span>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="user-list-widget__footer">
+      <a href="#" class="button button--primary button--with-icon" role="button" aria-label="Ver todos los usuarios">
+        Ver todos
+        <span class="button__icon" aria-hidden="true">
+          <img src="https://cdn-icons-png.flaticon.com/24/13/13719.png" alt="" />
+        </span>
+      </a>
+    </footer>
+  </aside>
+</body>
+</html>

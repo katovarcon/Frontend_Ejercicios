@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Card de película</title>
+</head>
+<body>
+  <article class="movie-card" aria-label="Película Avengers: Endgame">
+    <header class="movie-header">
+      <h1 class="movie-title">Avengers: Endgame</h1>
+      <p class="movie-genre" aria-label="Géneros">Acción, Aventura, Ciencia Ficción</p>
+      <span class="movie-rating" aria-label="Calificación IMDb">8.4 de 10</span>
+    </header>
+
+    <div class="movie-content">
+      <picture class="movie-poster">
+        <img 
+          src="https://http2.mlstatic.com/D_NQ_NP_614424-MLA52735656162_122022-O.webp" 
+          alt="Póster de Avengers: Endgame" 
+          width="300" 
+          height="450"
+          loading="lazy"
+        />
+      </picture>
+
+      <section class="movie-details">
+        <h2>Sobre la película</h2>
+        <p>
+          Tras los devastadores eventos de Avengers: Infinity War, el universo está en ruinas. Con la ayuda de los aliados restantes, los Avengers se reúnen una vez más para deshacer las acciones de Thanos y restaurar el equilibrio en el universo.
+        </p>
+
+        <div class="movie-crew" aria-label="Equipo de producción">
+          <div class="crew-group">
+            <h3>Actores</h3>
+            <ul>
+              <li><a href="#" title="Más sobre Robert Downey Jr.">Robert Downey Jr.</a></li>
+              <li><a href="#" title="Más sobre Chris Evans">Chris Evans</a></li>
+              <li><a href="#" title="Más sobre Scarlett Johansson">Scarlett Johansson</a></li>
+              <li><a href="#" title="Más sobre Mark Ruffalo">Mark Ruffalo</a></li>
+              <li><a href="#" title="Más sobre Chris Hemsworth">Chris Hemsworth</a></li>
+            </ul>
+            <a href="#" class="crew-more" aria-label="Ver más actores">Más</a>
+          </div>
+
+          <div class="crew-group">
+            <h3>Director</h3>
+            <p><a href="#" title="Más sobre Anthony Russo">Anthony Russo</a></p>
+          </div>
+
+          <div class="crew-group">
+            <h3>Productores</h3>
+            <p><a href="#" title="Más sobre Kevin Feige">Kevin Feige</a></p>
+            <p><a href="#" title="Más sobre Louis D'Esposito">Louis D'Esposito</a></p>
+          </div>
+
+          <div class="crew-group">
+            <h3>Guionistas</h3>
+            <p><a href="#" title="Más sobre Christopher Markus">Christopher Markus</a></p>
+            <p><a href="#" title="Más sobre Stephen McFeely">Stephen McFeely</a></p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="movie-footer">
+      <span class="movie-price" aria-label="Precio de la película">$19.00</span>
+      <button class="btn-buy" type="button" aria-label="Comprar película">Comprar</button>
+      <button class="btn-trailer" type="button" aria-label="Ver tráiler de la película">
+        VER TRÁILER ▶
+      </button>
+    </footer>
+  </article>
+</body>
+</html>

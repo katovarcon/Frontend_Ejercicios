@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Validar Formulario de Registro</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+  <form class="formulario" novalidate>
+    
+    <div class="campo">
+      <i class="fas fa-user"></i>
+      <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" required />
+      <i class="fas fa-check valid-icon"></i>
+    </div>
+
+    <div class="campo">
+      <i class="fas fa-envelope"></i>
+      <input type="email" name="email" id="email" placeholder="E-mail" required />
+      <i class="fas fa-check valid-icon"></i>
+    </div>
+
+    <div class="campo">
+      <i class="fas fa-lock"></i>
+      <input type="password" name="password" id="password" placeholder="Contraseña" required />
+      <i class="fas fa-check valid-icon"></i>
+    </div>
+
+    <div class="campo">
+      <i class="fas fa-lock"></i>
+      <input type="password" name="confirmar" id="confirmar" placeholder="Repetir contraseña" required />
+      <i class="fas fa-check valid-icon"></i>
+    </div>
+
+    <button type="submit">Crear usuario</button>
+  </form>
+
+</body>
+</html>

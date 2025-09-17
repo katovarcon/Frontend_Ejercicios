@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.icono {
+    position: relative;
+    width: 48px;  
+    height: 48px;
+}
+
+.icono img {
+    width: 100%;
+    height: 100%;
+}
+
+.notificacion {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}

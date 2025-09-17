@@ -1,0 +1,99 @@
+/* Fuente base */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Tarjeta de producto */
+  .product-card {
+    background-color: white;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Imagen */
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Etiquetas */
+  .badges {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .badge {
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .badge.free {
+    background-color: #4CAF50;
+  }
+  
+  .badge.discount {
+    background-color: #E53935;
+  }
+  
+  /* Corazón */
+  .heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .heart:hover {
+    color: red;
+  }
+  
+  /* Información del producto */
+  .info {
+    padding: 16px;
+  }
+  
+  .info h2 {
+    font-size: 18px;
+    margin: 0 0 8px;
+    font-weight: 600;
+  }
+  
+  .info h3 {
+    font-size: 14px;
+    margin: 0 0 12px;
+    font-weight: 400;
+    color: #555;
+  }
+  
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2E7D32;
+  }
+  
